@@ -1,0 +1,119 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.legal-header {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem max(1.25rem, calc((100% - 900px) / 2));
+  border-bottom: 1px solid #374151;
+  background: #0b1120;
+}
+
+.legal-brand {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-decoration: none;
+}
+
+.legal-back,
+.legal-content a {
+  color: #fb7185;
+  text-decoration: none;
+  transition: color .18s ease, text-decoration-color .18s ease;
+}
+
+.legal-back:hover,
+.legal-content a:hover {
+  color: #fda4af;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content {
+  width: min(100% - 2rem, 860px);
+  margin: 2.5rem auto 4rem;
+  padding: clamp(1.25rem, 5vw, 3rem);
+  border: 1px solid #374151;
+  border-radius: 16px;
+  background: #1f2937;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 20%);
+}
+
+.legal-content h1 {
+  margin: 0 0 .4rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  line-height: 1.2;
+}
+
+.legal-content h2 {
+  margin: 2rem 0 .6rem;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.35;
+}
+
+.legal-content h3 {
+  margin: 1.2rem 0 .4rem;
+  color: #f3f4f6;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.legal-content p {
+  margin: .8rem 0;
+}
+
+.legal-content .last-updated {
+  margin: 0 0 1.8rem;
+  color: #9ca3af;
+  font-size: .9rem;
+}
+
+.legal-content ul {
+  margin: .5rem 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-content li {
+  padding-left: .2rem;
+  margin: .25rem 0;
+}
+
+@media (max-width: 520px) {
+  .legal-header {
+    min-height: 60px;
+    padding-inline: 1rem;
+  }
+
+  .legal-content {
+    width: min(100% - 1rem, 860px);
+    margin: .5rem auto 1rem;
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+}
